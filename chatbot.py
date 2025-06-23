@@ -1,6 +1,20 @@
 from trasformers import GPT2LMHeadModel, GPT2Tokenizer
 import torch
 
+""" 
+set up environmet : 
+    pip install transformers
+    pip install torch
+    
+    initialize model
+    gpt2-medium
+    
+    set_personality() untuk mengubah personalitas bot
+    generate_response() untuk menghasilkan respons
+    chat_history untuk menyimpan riwayat percakapan
+
+"""
+
 class DynamicChatbot:
     def __init__(self, personality="assistant"):
         self.model_name = "gpt2"
